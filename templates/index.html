@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="Images/Company Icon 2.png" rel="icon">
-    <script defer src="js/scripts.js"></script>
+
+    {% load static %}
+    <!--CSS FILES-->
+    <link href="{%static 'css/all.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{%static 'css/animate.compat.css'}" rel="stylesheet" type="text/css">
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{%static 'css/styles.css'%}" rel="stylesheet" type="text/css">
+
+    <link href="{%static 'Images/Company Icon 2.png'%}" rel="icon">
+
+    <!--JS FILES-->
+    <script defer src="{%static 'js/scripts.js'%}"></script>
     <title>OrionConstructionCompany</title>
 </head>
 
@@ -26,7 +32,7 @@
                     <a href="#"><i class="fa-brands fa-behance"></i></a>
                     <a href="#"><i class="fa-solid fa-basketball"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><img src="Images/youtube-logotype.png" alt=""></i></a>
+                    <a href="#"><img src="{%static 'Images/youtube-logotype.png'%}" alt=""></i></a>
                 </div>
             </div>
         </header>
@@ -77,7 +83,7 @@
                     Our commitment to excellence, attention to detail, and use of quality materials ensure every project is built to the highest standards. With Orion, you’re not just building a structure — you’re creating a foundation for the future.</p>
                 <a href="#sec-2">Show More</a>
             </article>
-            <aside><img src="Images/img1.png" alt="man"></aside> <!--first image-->
+            <aside><img src="{%static 'Images/img1.png'%}" alt="man"></aside> <!--first image-->
         </div>
     </section>
     <section id="sec-2">
@@ -86,28 +92,28 @@
             <P> We believe every project deserves more than just a contractor, it deserves a <b>trusted partner</b>. <br> We combine skilled craftsmanship, quality materials, professional project management, and attention to detail to deliver work you can depend on. <br> From the first blueprint to the final finish, we keep your goals, budget, and expectations at the center of every decision. <br>With Orion, you build with confidence. </P>
             <article>
                 <figure>
-                    <div><img src="Images/ico1.png" alt=""></div>
+                    <div><img src="{%static 'Images/ico1.png'%}" alt=""></div>
                     <div class="cont">
                         <h2>we deliver quality</h2>
                         <p>We use quality materials, skilled craftsmanship, and careful attention to detail to ensure every project meets high standards and is built to last.</p>
                     </div>
                 </figure>
                 <figure>
-                    <div><img src="Images/ico2.png" alt=""></div>
+                    <div><img src="{%static 'Images/ico2.png'%}" alt=""></div>
                     <div class="cont">
                         <h2>Always on time</h2>
                         <p>We value your time, and work diligently to ensure your project is completed on time, every time. <br>  </p>
                     </div>
                 </figure>
                 <figure>
-                    <div><img src="Images/ico3.png" alt=""></div>
+                    <div><img src="{%static 'Images/ico3.png'%}" alt=""></div>
                     <div class="cont">
                         <h2>we are passionate</h2>
                         <p>We take pride in what we build. Our passion for construction drives us to approach every project with dedication, care, and a commitment to excellence.</p>
                     </div>
                 </figure>
                 <figure>
-                    <div><img src="Images/ico4.png" alt=""></div>
+                    <div><img src="{%static 'Images/ico4.png'%}" alt=""></div>
                     <div class="cont">
                         <h2>Professional services</h2>
                         <p>From planning to completion. We provide comprehensive professional services to ensure your project is executed with the highest level of expertise and care.</p>
@@ -123,7 +129,7 @@
             <div class="cont">
                 <div class="card border-0">
                     <div>
-                        <img src="Images/card1.png" class="card-img-top" alt="...">
+                        <img src="{%static 'Images/card1.png'%}" class="card-img-top" alt="...">
                         <h5 class="caption">Construction Management</h5>
                     </div>
                     <div class="card-body px-0 pt-4">
@@ -133,7 +139,7 @@
                 </div>
                 <div class="card border-0">
                     <div>
-                        <img src="Images/card2.png" class="card-img-top" alt="...">
+                        <img src="{%static 'Images/card2.png'%}" class="card-img-top" alt="...">
                         <h5 class="caption">Renovation</h5>
                     </div>
                     <div class="card-body px-0 pt-4">
@@ -143,7 +149,7 @@
                 </div>
                 <div class="card border-0">
                     <div>
-                        <img src="Images/card3.png" class="card-img-top" alt="...">
+                        <img src="{%static 'Images/card3.png'%}" class="card-img-top" alt="...">
                         <h5 class="caption">Architecture</h5>
                     </div>
                     <div class="card-body px-0 pt-4">
@@ -166,12 +172,12 @@
                 <a href="#">plumping</a>
             </div>
             <div class="cont">
-                <img class="wow animated fadeIn slow" src="Images/gallery1.png" alt="pic">
+                <img class="wow animated fadeIn slow" src="{%static 'Images/gallery1.png'%}" alt="pic">
                 <aside>
-                    <img src="Images/gallery3.jpg" alt="pic" class="wow animated flipInX delay-1s">
-                    <img src="Images/gallery2.jpg" alt="pic" class="wow animated flipInX delay-1s slower">
-                    <img src="Images/gallery4.jpg" alt="pic" class="wow animated flipInX delay-2s">
-                    <img src="Images/gallery5.jpg" alt="pic" class="wow animated flipInX delay-2s slower">
+                    <img src="{%static 'Images/gallery3.jpg'%}" alt="pic" class="wow animated flipInX delay-1s">
+                    <img src="{%static 'Images/gallery2.jpg'%}" alt="pic" class="wow animated flipInX delay-1s slower">
+                    <img src="{%static 'Images/gallery4.jpg'%}" alt="pic" class="wow animated flipInX delay-2s">
+                    <img src="{%static 'Images/gallery5.jpg'%}" alt="pic" class="wow animated flipInX delay-2s slower">
                 </aside>    
             </div>
         </div>
@@ -183,31 +189,31 @@
             <div class="cont">
                 <article class="quoteblock">
                     <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
+                        <p><img src="{%static 'Images/blockquote2.png'%}" alt="quote mark"></p>
                         <p>From the initial planning to the final handover, Orion handled the project with professionalism and attention to detail. Communication was clear, the site was well managed, and everything progressed smoothly.</p>
                     </div>
                     <figure>
-                        <img class="customer" src="Images/Cust1.png" alt="customer1">
+                        <img class="customer" src="{%static 'Images/Cust1.png'%}" alt="customer1">
                         <figcaption>Sarah Wanjiku - Home owner</figcaption>
                     </figure>
                 </article>
                 <article class="quoteblock">
                     <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote1.png" alt="quote mark"></p>
+                        <p><img src="{%static 'Images/blockquote1.png'%}" alt="quote mark"></p>
                         <p>Orion's attention to detail and commitment to quality exceeded our expectations. They delivered the project on time and within budget, and the final result was beyond what we had envisioned.</p>
                     </div>
                     <figure>
-                        <img class="customer" src="Images/Cust2.png" alt="customer1">
+                        <img class="customer" src="{%static 'Images/Cust2.png'%}" alt="customer1">
                         <figcaption>James Otieno - Business Owner</figcaption>
                     </figure>
                 </article>
                 <article class="quoteblock">
                     <div class="quotetxt arrow">
-                        <p><img src="Images/blockquote2.png" alt="quote mark"></p>
+                        <p><img src="{%static 'Images/blockquote2.png'%}" alt="quote mark"></p>
                         <p>Building a property is a major investment, so having a contractor we could rely on made all the difference. Orion delivered quality work, maintained professional standards on site, and kept us informed at every stage.</p>
                     </div>
                     <figure>
-                        <img class="customer" src="Images/Cust2.png" alt="customer1">
+                        <img class="customer" src="{%static 'Images/Cust2.png'%}" alt="customer1">
                         <figcaption>Brian Kamau - Project manager</figcaption>
                     </figure>
                 </article>
@@ -219,7 +225,8 @@
                     <h1>do you have any questions?</h1>
                     <h2>feel free to contact us!</h2>
                 </aside>
-                <form id="form" action="/" method="">
+                <form method="post">
+                    {% csrf_token %}
                     <input type="text" name="name" id="" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <input type="text" name="message" id="" placeholder="Input your Message" required>
@@ -269,8 +276,8 @@
         </div>
     </section>
 
-    <script src="js/wow.min.js"></script>
+    <script src="{%static 'js/wow.min.js'%}"></script>
     <script> new WOW().init();</script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="{%static 'js/bootstrap.bundle.min.js'%}"></script>
 </body>
 </html>
