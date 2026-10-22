@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Contact
+from Orionapp.models import *
 # Register your models here.
 
+admin.site.register(Contact)
 

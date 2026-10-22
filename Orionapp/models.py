@@ -7,3 +7,7 @@ class Contact(models.Model):
     email = models.EmailField()  #also for validation. ie defining correct field
     message = models.TextField()
 
+    def __str__(self):
+        return self.name
+        
+
