@@ -65,7 +65,7 @@
                             {% for x in all %}
                             <tr>
                                 <td class="px-4 fw-semibold">
-                                    {{ x.name }}
+                                    {{ x.name }} xh
                                 </td>
 
                                 <td class="px-4">
@@ -78,6 +78,12 @@
                                 <td class="px-4" style="min-width: 250px;">
                                     {{ x.message }}
                                 </td>
+
+                                <td>
+                                    <a href="/edit/{{x.id}}"class="btn btn-warning">Edit</a>
+                                    <a href="/delete/{{x.id}}" class="btn btn-danger">Delete</a>
+                                </td>
+
                             </tr>
 
                             {% empty %}

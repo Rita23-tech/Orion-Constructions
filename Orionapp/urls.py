@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('show/', views.show, name='show'),
+    path('delete/<int:id>', views.delete), #this is to delete contact info from frontend
+    path('edit/<int:id>', views.edit),
 ]
